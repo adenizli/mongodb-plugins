@@ -1,0 +1,51 @@
+{
+     "name": "mongodb-plugins",
+     "version": "1.0.0",
+     "description": "A collection of useful MongoDB/Mongoose plugins for Node.js applications including ID transformation, soft delete, and timestamp utilities",
+     "keywords": [
+          "mongodb",
+          "mongoose",
+          "plugins",
+          "soft-delete",
+          "timestamps",
+          "id-transform",
+          "nestjs"
+     ],
+     "license": "MIT",
+     "author": "Ahmet Sait Denizli",
+     "type": "module",
+     "main": "dist/index.js",
+     "types": "dist/index.d.ts",
+     "files": [
+          "dist",
+          "README.md"
+     ],
+     "repository": {
+          "type": "git",
+          "url": "git+https://github.com/ahmetsaitdenizli/mongodb-plugins.git"
+     },
+     "homepage": "https://github.com/ahmetsaitdenizli/mongodb-plugins",
+     "bugs": {
+          "url": "https://github.com/ahmetsaitdenizli/mongodb-plugins/issues"
+     },
+     "engines": {
+          "node": ">=14.0.0"
+     },
+     "scripts": {
+          "build": "tsc",
+          "dev": "tsc --watch",
+          "clean": "rm -rf dist",
+          "prepublishOnly": "npm run clean && npm run build",
+          "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "peerDependencies": {
+          "mongoose": ">=6.0.0"
+     },
+     "devDependencies": {
+          "@nestjs/common": "^10.0.0",
+          "@nestjs/mongoose": "^10.0.0",
+          "@types/node": "^18.0.0",
+          "mongoose": "^7.0.0",
+          "typescript": "^5.0.0"
+     }
+}
